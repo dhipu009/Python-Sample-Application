@@ -2,7 +2,7 @@ on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: myacr808976.azurecr.io
+  REGISTRY_NAME: myacr808976
   CLUSTER_NAME: myAKSCluster
   CLUSTER_RESOURCE_GROUP: myrg
   NAMESPACE: default
