@@ -3,11 +3,9 @@ FROM python:latest
 RUN mkdir /build
 WORKDIR /build
 
-COPY app /build
+COPY . /build
 
-COPY app/requirements.txt /build
-
-RUN pip install -r requirements.txt
+RUN pip install -r /build/requirements.txt
 
 EXPOSE 5000
 
