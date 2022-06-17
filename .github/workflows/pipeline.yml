@@ -2,12 +2,12 @@ on: [push]
 
 # Environment variables available to all jobs and steps in this workflow
 env:
-  REGISTRY_NAME: {registry-name}
-  CLUSTER_NAME: {cluster-name}
-  CLUSTER_RESOURCE_GROUP: {resource-group-name}
-  NAMESPACE: {namespace-name}
-  SECRET: {secret-name}
-  APP_NAME: {app-name}
+  REGISTRY_NAME: myacr808976.azurecr.io
+  CLUSTER_NAME: myAKSCluster
+  CLUSTER_RESOURCE_GROUP: myrg
+  NAMESPACE: default
+  SECRET: python-app-secret
+  APP_NAME: python-app
   
 jobs:
   build:
